@@ -1,2 +1,18 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.header{
+    display: flex;
+ }
+ .brand{
+    flex-direction: column;
+    width: 90%;
+ }
+ #buttons{
+    flex-direction: column;
+ }
+ #pageTitle{
+ 
+ }
+ #sub-heading{
+    
+ }
