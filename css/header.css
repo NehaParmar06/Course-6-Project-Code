@@ -2,17 +2,28 @@
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 .header{
     display: flex;
+    padding: 5px;
  }
  .brand{
     flex-direction: column;
-    width: 90%;
+    width: 85%;
+    font-family: 'Satisfy';
  }
  #buttons{
     flex-direction: column;
+    margin-left: 5%;
  }
  #pageTitle{
- 
+   color: blue;
+   font-size: xx-large;
  }
  #sub-heading{
     
  }
+.headerButton{
+   background-color: blue;
+   color: white;
+   padding: 10px;
+   margin: 2px;
+}
+ 
