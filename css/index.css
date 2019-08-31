@@ -55,7 +55,7 @@ body{
  }
 
  input{
-   background-color: lightgrey;
+   background-color: #E5E5E5;
    border: none;
    padding: 10px;
    width: -webkit-fill-available;
@@ -96,5 +96,22 @@ body{
  }
  .hyperlink{
    text-decoration: none;
+ }
+ .comment-modal-content{
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   width: 70%;
+ }
+ #content{
+   width: 99%;
+   height: 200px;
+   background: #E5E5E5;
+ }
+ .commentModalButton{
+   background: mediumseagreen;
+   border: none;
+   padding: 10px;
+   color: white;
  }
                                  
