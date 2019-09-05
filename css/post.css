@@ -11,6 +11,7 @@
 .blogAuthor {
   font-family: 'Niconne', cursive;
   font-size: 30px;
+  padding-top: 4%;
 }
 .blogContent{
   display: flex;
@@ -19,11 +20,22 @@
   padding: 0% 5% 0% 5%;
 }
 .blogComment{
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
 }
 .blogCommentListHead{
     font-family: Josefin sans-serif;
     font-weight: bold;
     font-size: large;
+}
+.blogLike{
+  display: flex;
+  flex-direction: column;
+}
+.para{
+  margin-top: unset;
+  margin-bottom: unset;
 }
 #editButton{
   background-color: rgb(255, 0, 106);
@@ -38,4 +50,7 @@
 }
 #commentBody{
   width: 60%;
+  margin-bottom: 2px;
+}
+#likeButtonMessage{
 }
