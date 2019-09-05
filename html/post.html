@@ -8,7 +8,7 @@
 </style>     
 </head>
 <body>
-<div class="header">
+	<div class="header">
            <div class="brand">
             <div id="pageTitle"></div>
             <div id="sub-heading"></div>
@@ -18,6 +18,48 @@
             <button class="headerButton" id="signInButton">Sign In</button>
             <button class="headerButton" id="signUpButton">Sign Up</button>
         </div>
+        <div>
+        	<div id="signInModal" class="modal">
+            	<!-- Modal content -->
+            	<div class="modal-content">
+                	<span class="close">&times;</span>
+                	<h2 class="modalHeading" id="signInHeading"></h2>
+
+                	<div class="line"></div>
+                		<label class="modalLabel">Username</label>
+                		<input type="text" id="userName" placeholder="Enter Username" required>
+                		<label class="modalLabel">Password</label>
+                		<input type="password" id="password" placeholder="Enter Password" required>
+                		<button class="modalButton">Sign In</button>
+
+                	<div class="NaM">
+                    	<span>Not a member?</span>
+                    	<a href="" class="hyperlink">Sign Up</a>
+                	</div>
+            	</div>
+        	</div>          
+   		</div>
+                
+    	<div>
+        	<div id="signUpModal" class="modal">
+            <!-- Modal content -->
+            	<div class="modal-content">
+                	<span class="close">&times;</span>
+                	<h2 class="modalHeading" id="signUpHeading"></h2>
+                
+                	<div class="line"></div>        
+                		<label class="modalLabel">Full Name</label>
+                		<input type="text" id="fullName" placeholder="Enter Full Name" required>
+                		<label class="modalLabel">Username</label>
+                		<input type="text" id="userName" placeholder="Enter Username" required>
+                		<label class="modalLabel">Password</label>
+                		<input type="password" id="password" placeholder="Enter Username" required>
+                		<label class="modalLabel">Confirm Password</label>
+                		<input type="password" id="cnfPassword" placeholder="Confirm Username" required>
+                		<button class="modalButton">Sign Up</button>
+            	</div> 
+        	</div>
+    	</div>
     </div>
 
     <div class="blogContent">
@@ -26,7 +68,7 @@
         </div>
 
         <div class="blogAuthor">
-            <p>Jimi</p>
+            <p class="para">Jimi</p>
             <button class="headerButton" id="editButton">Edit</button>
         </div>
 
@@ -34,14 +76,14 @@
             <p id="blogBody">
                 Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
             </p>
-            <button class="headerButton" id="likeButton">Like</button>
+        </div>
+        <div class="blogLike">
+        	<div><button class="headerButton" id="likeButton">Like</button></div>
+            <p class="para" id="likeButtonMessage">Be the first one to like this!</p>
         </div>
         <div class="blogComment">
-            <p>Be the first one to like this!</p>
-            <textarea id="commentBody" rows="5" placeholder="Leave a comment..."></textarea> 
-            <div>
-                <button class="headerButton" id="commentButton">Comment</button>
-            </div>
+            <textarea id="commentBody" rows="5" placeholder="Leave a comment..."></textarea>
+            <div><button class="headerButton" id="commentButton">Comment</button></div>
             <div class="blogCommentListHead">
                <p>All Comments</p>
             </div>
@@ -49,9 +91,7 @@
 
     </div>
 
-    <!-- Insert code for Like button, Comment button, Comment box here-->
-
-    <script src="..\js\post.js" defer></script>
+    <script src="..\js\post.js"></script>
     <script src="..\js\header.js">             
     </script>
     
