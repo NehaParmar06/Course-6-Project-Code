@@ -1,19 +1,19 @@
 // Get the modal
 var modal = document.getElementById("iconModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("openModal");
+// Get the element that opens the modal
+var element = document.getElementById("openModal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var btn = document.getElementById("no-btn");
 
-// When the user clicks on the button, open the modal
-function openModal() {
+// When the user clicks on the trash element, open the modal
+element.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+// When the user clicks on No button, close the modal
+btn.onclick = function() {
   modal.style.display = "none";
 }
 
@@ -22,4 +22,6 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+
 }
+

@@ -90,17 +90,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    flex-flow: row wrap;    
+    width: 85%;
+    flex-flow: row wrap;
 }
-
 
 .icon{
     text-align: end;
 }
 
 /* The Modal (background) */
-.modal {
+.trashmodal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -114,25 +113,45 @@ body {
   }
   
   /* Modal Content/Box */
-  .modal-content {
+  .trash-modal-content {
     background-color: #fefefe;
+    color: black;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    width: 30vh; /* Could be more or less, depending on screen size */
+    height: 12vh;
+    align-items: center;
+    align-content: center;
+    align-self: auto;
     font-weight: bold;
   }
+
+  #trash-btns{
+      display: flex;
+      padding: 10px;
+      margin: 10px;
+      flex-direction: row;
+  }
   
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
+  /* The No Button */
+  #yes-btn {
+    color:white;
+    float: right;
+    font-size: 15px;
     cursor: pointer;
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  /* The Yes Button */
+  #no-btn {
+    color:white;
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+    background-color:red;
+    padding: 15px;
+    margin: 10px;
   }
