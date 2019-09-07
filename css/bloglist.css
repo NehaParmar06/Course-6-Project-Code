@@ -1,4 +1,6 @@
-
+.NaM{
+    color: black;
+}
 
 .post-left {
     flex: 0 0 35%;
@@ -13,8 +15,11 @@
 
 .post-right {
     flex: 0 0 35%;
+<<<<<<< HEAD
     width: 35%;
     height: 50%;
+=======
+>>>>>>>  Removed webtoolkit ellipsis , added icon for trash and ellipsisi
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px 10px 10px 20px;
@@ -68,14 +73,13 @@
     margin-bottom: 0 !important;
     max-width: 400px;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     overflow: hidden;
-    text-overflow: ellipsis;
     line-height: 1.5em;
     max-height: 4.5em;
-    
 }
+
 body {
     height: 100%;
     width: 100%;
@@ -85,11 +89,9 @@ body {
     background-color: orange;
     background-size: 2000% 2000%;
 }
+
 .allPostsContainer {
     display: flex;
-    height: 100%;
-    width: 90%;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: space-around;
@@ -105,6 +107,12 @@ body {
 }
 
 .trash-icon{
+    width: 90%;
+    flex-flow: row wrap;    
+}
+
+
+.icon{
     text-align: end;
 }
 
