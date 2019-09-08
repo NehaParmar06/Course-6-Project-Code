@@ -98,6 +98,10 @@ body {
     text-align: end;
 }
 
+.trash-icon{
+    text-align: end;
+}
+
 /* The Modal (background) */
 .trashmodal {
     display: none; /* Hidden by default */
