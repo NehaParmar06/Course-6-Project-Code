@@ -5,6 +5,9 @@
 .allPostsContainer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:center;
+    align-items:stretch;
 }
 
 .post-left {
