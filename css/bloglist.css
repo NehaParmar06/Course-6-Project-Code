@@ -11,7 +11,6 @@
     display: inline-block;
     
 }
-    
 .post-left {
         width: 15%;            
         max-width: 15%;
@@ -20,19 +19,17 @@
         text-align: center;
         font-weight: bold;
         color: #000;
+        padding: 3%;
 }
 .post-content {
-        width: 75%;           
+        width: 50%;           
         display: table-cell;
         text-align: left;
         background-color: #E8E8E8;
         color: #000000;
         border-radius: 0 15px 15px 0;
         padding: 0 20px;      
-              
-   
 }
-
 .post-title{
     font-family: 'Itim', cursive;
     font-weight: bold;
@@ -40,7 +37,6 @@
     font-size: 25px;
     height: 25px;
 }
-
 .post-more {
     float: right;
     cursor: pointer;
@@ -51,17 +47,14 @@
     font-size: 30px;
 }
 .post-desc{
-    height: 100px;
-    margin-bottom: 0 !important;
+    height: 55px;
+    /* margin-bottom: 0 !important; */
     overflow: hidden;
-    
     width: 400px;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    -webkit-line-clamp: 2; 
-    
+    /* white-space: nowrap; */
+    -webkit-line-clamp: 2;
 }
-
 body {
     height: 100%;
     width: 100%;
@@ -79,4 +72,47 @@ body {
     justify-content: center;
     align-items: center;
     align-content: space-around;
+}
+.trashIconButtonDiv{
+    float: right;
+    padding-top: 2%;
+}
+.trashIconButton{
+    border: none;
+    background: none;
+    font-size: larger;
+}
+#deleteConfirmationText{
+    color: black;
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: 'Roboto Condensed';
+}
+#yesButton{
+    width: 40%;
+    background: indianred;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin-right: 2%;
+    margin-left: 3%;
+    margin-top: 20px;
+}
+#noButton{
+    width: 40%;
+    background: mediumseagreen;
+    border: none;
+    padding: 10px;
+    color: white;
+    /* margin-right: 10px; */
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.moreContentDiv{
+    float: right;
+}
+.moreContentButton{
+    border: none;
+    background: none;
+    font-size: larger;
 }

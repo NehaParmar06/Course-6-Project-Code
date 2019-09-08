@@ -52,3 +52,6 @@
   width: 60%;
   margin-bottom: 2px;
 }
+.post-desc{
+  word-wrap: break-word;
+}

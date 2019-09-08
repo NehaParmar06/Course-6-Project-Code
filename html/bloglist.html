@@ -2,15 +2,17 @@
 <html>
 
 <head>
-    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
     <link href='..\css\font.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     </style>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    
+
 </head>
+
 <body>
     <div id="main-container-div">
         <div class="header">
@@ -19,7 +21,7 @@
                 <div id="pageTitle"></div>
                 <div id="sub-heading"></div>
             </div>
-    
+
             <div id="buttons">
                 <button class="headerButton" id="signInButton">Sign In</button>
                 <button class="headerButton" id="signUpButton">Sign Up</button>
@@ -46,9 +48,9 @@
                     <a href="" class="hyperlink">Sign Up</a>
                 </div>
             </div>
-        </div>          
+        </div>
     </div>
-                
+
     <div>
         <!-- Insert code for Sign Up modal here -->
         <div id="signUpModal" class="modal">
@@ -56,8 +58,8 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2 class="modalHeading" id="signUpHeading"></h2>
-                
-                <div class="line"></div>        
+
+                <div class="line"></div>
                 <label class="modalLabel">Full Name</label>
                 <input type="text" id="fullName" placeholder="Enter Full Name" required>
                 <label class="modalLabel">Username</label>
@@ -68,99 +70,148 @@
                 <input type="password" id="cnfPassword" placeholder="Confirm Username" required>
                 <button class="modalButton">Sign Up</button>
 
-            </div> 
-        </div>
-    </div>
-    
-    
-    <div class="allPostsContainer">
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-            <!-- Insert code for Trash icon here -->
-
-            <p class="post-title">Hello there ! This is Post 1. </p>
-            <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-
-            <!-- Insert code for ... icon here -->
-
-        </div>
-    </div>
-
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-                <!-- Insert code for Trash icon here -->
-
-                <p class="post-title">Hello there ! This is Post 2. </p>
-                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-
-            
-            <!-- Insert code for ... icon here -->
-        </div>
-    </div>
-
-
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-            <!-- Insert code for Trash icon here -->
-
-                <p class="post-title">Hello there ! This is Post 3. </p>
-                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-
-            <!-- Insert code for ... icon here -->
-            
-
-        </div>
-    </div>
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-            <!-- Insert code for Trash icon here -->
-
-                <p class="post-title">Hello there ! This is Post 4. </p>
-                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-
-            <!-- Insert code for ... icon here -->
-
-        </div>
-    </div>
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-            <!-- Insert code for Trash icon here -->
-
-                <p class="post-title">Hello there ! This is Post 5. </p>
-                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-            
-            <!-- Insert code for ... icon here -->
-        
+            </div>
         </div>
     </div>
 
     <div>
-
         <!-- Insert code for delete modal here -->
-        
+        <div id="alertPopup" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div id="deleteConfirmationText"></div>
+                <div>
+                    <button class="modalButton" id="yesButton">Yes</button>
+                    <button class="modalButton" id="noButton">No</button>
+                </div>
+            </div>
+        </div>
     </div>
-        
-</div>
+
+    <div class="allPostsContainer">
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username" id="postUsername1"></p>
+            </div>
+            <div class="post-content">
+
+                <!-- Insert code for Trash icon here -->
+                <div class="trashIconButtonDiv">
+                    <button class="btn trashIconButton" id="deletePostButton" onclick="deletePost()">
+                        <i class="fa fa-trash"></i></button>
+                </div>
+                <div>
+                    <p class="post-title" id="postTitle1"></p>
+                    <p class="post-desc" id="postDesc1"></p>
+                </div>
+
+                <!-- Insert code for ... icon here -->
+                <div class="moreContentDiv">
+                    <button class="btn moreContentButton" id="showMoreButton" onclick="showMore()">
+                        <i class="fa fa-ellipsis-h"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username" id="postUsername2"></p>
+            </div>
+            <div class="post-content">
+
+                <!-- Insert code for Trash icon here -->
+                <div class="trashIconButtonDiv">
+                    <button class="btn trashIconButton" id="deletePostButton" onclick="deletePost()">
+                        <i class="fa fa-trash"></i></button>
+                </div>
+                <div>
+                    <p class="post-title" id="postTitle2"></p>
+                    <p class="post-desc" id="postDesc2"></p>
+                </div>
+
+                <!-- Insert code for ... icon here -->
+                <div class="moreContentDiv">
+                    <button class="btn moreContentButton" id="showMoreButton" onclick="showMore()">
+                        <i class="fa fa-ellipsis-h"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username" id="postUsername3"></p>
+            </div>
+            <div class="post-content">
+
+                <!-- Insert code for Trash icon here -->
+                <div class="trashIconButtonDiv">
+                    <button class="btn trashIconButton" id="deletePostButton" onclick="deletePost()">
+                        <i class="fa fa-trash"></i></button>
+                </div>
+                <div>
+                    <p class="post-title" id="postTitle3"></p>
+                    <p class="post-desc" id="postDesc3"></p>
+                </div>
+
+                <!-- Insert code for ... icon here -->
+                <div class="moreContentDiv">
+                    <button class="btn moreContentButton" id="showMoreButton" onclick="showMore()">
+                        <i class="fa fa-ellipsis-h"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username" id="postUsername4"></p>
+            </div>
+            <div class="post-content">
+
+                <!-- Insert code for Trash icon here -->
+                <div class="trashIconButtonDiv">
+                    <button class="btn trashIconButton" id="deletePostButton" onclick="deletePost()">
+                        <i class="fa fa-trash"></i></button>
+                </div>
+                <div>
+                    <p class="post-title" id="postTitle4"></p>
+                    <p class="post-desc" id="postDesc4"></p>
+                </div>
+
+                <!-- Insert code for ... icon here -->
+                <div class="moreContentDiv">
+                    <button class="btn moreContentButton" id="showMoreButton" onclick="showMore()">
+                        <i class="fa fa-ellipsis-h"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username" id="postUsername5"></p>
+            </div>
+            <div class="post-content">
+
+                <!-- Insert code for Trash icon here -->
+                <div class="trashIconButtonDiv">
+                    <button class="btn trashIconButton" id="deletePostButton" onclick="deletePost()">
+                        <i class="fa fa-trash"></i></button>
+                </div>
+                <div>
+                    <p class="post-title" id="postTitle5"></p>
+                    <p class="post-desc" id="postDesc5"></p>
+                </div>
+
+                <!-- Insert code for ... icon here -->
+                <div class="moreContentDiv">
+                    <button class="btn moreContentButton" id="showMoreButton" onclick="showMore()">
+                        <i class="fa fa-ellipsis-h"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <script src="..\js\bloglist.js">  </script>
     <script src="..\js\header.js"> </script>
 </body>
