@@ -1,6 +1,8 @@
 var modal = document.getElementById("iconModal");
 var btn = document.getElementById("no-btn");
 
+// Get the element that opens the modal
+//var element = document.getElementById("openModal");
 var element0 = document.getElementsByClassName("trash-icon")[0];
 var element1 = document.getElementsByClassName("trash-icon")[1];
 var element2 = document.getElementsByClassName("trash-icon")[2];
