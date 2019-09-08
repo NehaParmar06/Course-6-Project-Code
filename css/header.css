@@ -6,12 +6,13 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
  }
  .brand{
     flex-direction: column;
-    width: 85%;
+    width: 60%;
     font-family: 'Satisfy';
+    flex: 0 0 60%;
  }
  #buttons{
     flex-direction: column;
-    margin-left: 5%;
+    width: 40%;
  }
  #pageTitle{
    color: blue;
@@ -119,3 +120,16 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
    padding: 10px;
    color: white;
  }
+ /* @media only screen and (min-width: 1005px) {
+  #buttons{
+    width: 15%;
+ }
+}
+@media only screen and (min-width: 610px) and (max-width: 1004px) {
+  #buttons{
+    width: 25%;
+ }
+ .brand{
+   width: 75%;
+ }
+} */
