@@ -24,11 +24,6 @@
   flex-direction: column;
   padding-top: 2%;
 }
-.blogCommentListHead{
-    font-family: Josefin sans-serif;
-    font-weight: bold;
-    font-size: large;
-}
 .blogLike{
   display: flex;
   flex-direction: column;
@@ -36,6 +31,13 @@
 .para{
   margin-top: unset;
   margin-bottom: unset;
+}
+.blogCommentList{
+  background-color: #e2e4e6;
+  padding: 2px 2px 2px 2px;
+}
+.commentHolder{
+  padding: 1%;
 }
 #editButton{
   background-color: rgb(255, 0, 106);
@@ -48,10 +50,16 @@
 #commentButton{
   background-color: rgb(255, 0, 106);
 }
+#blogCommentListHead{
+    font-family: Josefin sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
 #commentBody{
   width: 60%;
   margin-bottom: 2px;
 }
-.post-desc{
-  word-wrap: break-word;
+#commentDetails{
+  background-color: white;
+  padding: 1%;
 }
