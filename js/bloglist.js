@@ -8,6 +8,7 @@ var element1 = document.getElementsByClassName("trash-icon")[1];
 var element2 = document.getElementsByClassName("trash-icon")[2];
 var element3 = document.getElementsByClassName("trash-icon")[3];
 var element4 = document.getElementsByClassName("trash-icon")[4];
+document.getElementById("trashModalText").innerHTML = "Are you sure you want to delete this post?"
 
 
 // When the user clicks on the trash element, open the modal
